@@ -17,7 +17,18 @@ const filmSchema = new mongoose.Schema({
     actors: {
         type: Array,
         required: true
+    },
+    description: {
+        type: String,
+    },
+    daterelaase: {
+        type: Date,
+    },
+      poster:{
+        type: String,
+        
     }
+
 })
 
 const Film = mongoose.model('Film', filmSchema);
